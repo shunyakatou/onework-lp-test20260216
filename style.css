@@ -1,0 +1,641 @@
+/* ==========================================================================
+   One Work LP - Style
+   ========================================================================== */
+
+/* --- Reset & Base --- */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Meiryo", sans-serif;
+  color: #1a1a2e;
+  background: #fff;
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* --- Utility --- */
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.sp-only {
+  display: none;
+}
+
+/* --- Button --- */
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 8px;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+
+.btn-primary {
+  background: #2563eb;
+  color: #fff;
+  padding: 16px 40px;
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+}
+
+.btn-primary:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.3);
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  z-index: 100;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+
+.logo {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #2563eb;
+  letter-spacing: 0.02em;
+}
+
+.header-cta {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #2563eb;
+  text-decoration: none;
+  padding: 8px 20px;
+  border: 2px solid #2563eb;
+  border-radius: 6px;
+  transition: all 0.25s ease;
+}
+
+.header-cta:hover {
+  background: #2563eb;
+  color: #fff;
+}
+
+/* ==========================================================================
+   Hero
+   ========================================================================== */
+.hero {
+  position: relative;
+  padding: 160px 0 120px;
+  background: linear-gradient(135deg, #f0f5ff 0%, #e8efff 50%, #f8faff 100%);
+  overflow: hidden;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-label {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #2563eb;
+  background: rgba(37, 99, 235, 0.08);
+  padding: 6px 16px;
+  border-radius: 100px;
+  margin-bottom: 24px;
+  letter-spacing: 0.06em;
+}
+
+.hero-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  line-height: 1.4;
+  margin-bottom: 24px;
+  color: #0f172a;
+}
+
+.hero-sub {
+  font-size: 1.1rem;
+  color: #475569;
+  margin-bottom: 40px;
+  line-height: 1.9;
+}
+
+.hero-bg-decoration {
+  position: absolute;
+  top: -80px;
+  right: -120px;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.07) 0%, transparent 70%);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* ==========================================================================
+   Section Common
+   ========================================================================== */
+.section {
+  padding: 100px 0;
+}
+
+.section-title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 56px;
+  color: #0f172a;
+  letter-spacing: 0.02em;
+}
+
+/* --- Card Grid --- */
+.card-grid {
+  display: grid;
+  gap: 28px;
+}
+
+.card-grid.col-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card-grid.col-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 36px 32px;
+  border: 1px solid #e8ecf1;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
+  transform: translateY(-4px);
+}
+
+.card-heading {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #0f172a;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #64748b;
+  line-height: 1.85;
+}
+
+/* ==========================================================================
+   Problems
+   ========================================================================== */
+.problems {
+  background: #f8fafc;
+}
+
+.problem-card .card-icon {
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: #2563eb;
+  background: rgba(37, 99, 235, 0.08);
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* ==========================================================================
+   Strengths
+   ========================================================================== */
+.strength-card {
+  position: relative;
+  padding-top: 44px;
+}
+
+.strength-number {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #fff;
+  background: #2563eb;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* ==========================================================================
+   Flow
+   ========================================================================== */
+.flow {
+  background: #f8fafc;
+}
+
+.flow-steps {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0;
+}
+
+.flow-step {
+  text-align: center;
+  flex: 1;
+  max-width: 220px;
+  padding: 0 12px;
+}
+
+.flow-step-number {
+  width: 52px;
+  height: 52px;
+  background: #2563eb;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 800;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.flow-step-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #0f172a;
+}
+
+.flow-step-text {
+  font-size: 0.88rem;
+  color: #64748b;
+  line-height: 1.75;
+}
+
+.flow-connector {
+  width: 48px;
+  height: 2px;
+  background: #cbd5e1;
+  margin-top: 26px;
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   Cases
+   ========================================================================== */
+.case-card {
+  padding: 40px 36px;
+}
+
+.case-label {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #2563eb;
+  letter-spacing: 0.1em;
+  margin-bottom: 16px;
+}
+
+.case-card .card-heading {
+  font-size: 1.15rem;
+  margin-bottom: 20px;
+}
+
+.case-profile {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.case-avatar {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #2563eb, #60a5fa);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 700;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.case-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.case-age,
+.case-career {
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+/* ==========================================================================
+   FAQ
+   ========================================================================== */
+.faq {
+  background: #f8fafc;
+}
+
+.faq-list {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background: #fff;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #e8ecf1;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.faq-item[open] {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+.faq-question {
+  padding: 24px 32px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  color: #0f172a;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.faq-question::-webkit-details-marker {
+  display: none;
+}
+
+.faq-question::before {
+  content: "Q";
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: #2563eb;
+  background: rgba(37, 99, 235, 0.08);
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.faq-question::after {
+  content: "";
+  margin-left: auto;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #94a3b8;
+  border-bottom: 2px solid #94a3b8;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.faq-item[open] .faq-question::after {
+  transform: rotate(-135deg);
+}
+
+.faq-answer {
+  padding: 0 32px 24px 80px;
+  font-size: 0.95rem;
+  color: #64748b;
+  line-height: 1.85;
+}
+
+/* ==========================================================================
+   CTA
+   ========================================================================== */
+.cta {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: #fff;
+}
+
+.cta-title {
+  color: #fff;
+}
+
+.cta-sub {
+  text-align: center;
+  font-size: 1rem;
+  color: #94a3b8;
+  margin-top: -40px;
+  margin-bottom: 48px;
+}
+
+.cta-form {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #cbd5e1;
+}
+
+.form-input {
+  width: 100%;
+  padding: 14px 18px;
+  border: 1px solid #334155;
+  background: #1e293b;
+  color: #f1f5f9;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.form-input::placeholder {
+  color: #475569;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 18px;
+  font-size: 1.05rem;
+  margin-top: 8px;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+.footer {
+  background: #0f172a;
+  padding: 48px 0;
+  text-align: center;
+  border-top: 1px solid #1e293b;
+}
+
+.footer-logo {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #2563eb;
+  margin-bottom: 8px;
+}
+
+.footer-text {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-bottom: 16px;
+}
+
+.footer-copy {
+  font-size: 0.78rem;
+  color: #475569;
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+@media (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+
+  .sp-only {
+    display: inline;
+  }
+
+  .hero {
+    padding: 120px 0 80px;
+  }
+
+  .hero-title {
+    font-size: 1.85rem;
+  }
+
+  .hero-sub {
+    font-size: 1rem;
+  }
+
+  .section {
+    padding: 72px 0;
+  }
+
+  .section-title {
+    font-size: 1.45rem;
+    margin-bottom: 40px;
+  }
+
+  /* Card Grid → 1 column */
+  .card-grid.col-3,
+  .card-grid.col-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 28px 24px;
+  }
+
+  /* Flow → Vertical */
+  .flow-steps {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .flow-step {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .flow-connector {
+    width: 2px;
+    height: 32px;
+    margin: 0;
+  }
+
+  /* FAQ */
+  .faq-question {
+    padding: 20px 20px;
+    font-size: 0.95rem;
+  }
+
+  .faq-answer {
+    padding: 0 20px 20px 68px;
+  }
+
+  /* CTA */
+  .cta-sub {
+    margin-top: -28px;
+    margin-bottom: 36px;
+  }
+
+  /* Case */
+  .case-card {
+    padding: 28px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.6rem;
+  }
+
+  .btn-primary {
+    padding: 14px 32px;
+    font-size: 0.95rem;
+  }
+
+  .header-inner {
+    height: 56px;
+  }
+
+  .hero {
+    padding: 104px 0 64px;
+  }
+}
